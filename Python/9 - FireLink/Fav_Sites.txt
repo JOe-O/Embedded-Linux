@@ -1,0 +1,4 @@
+youtube: https://www.youtube.com/
+facebook: https://www.facebook.com/
+instagram: https://www.instagram.com/
+netflix: https://www.netflix.com/
