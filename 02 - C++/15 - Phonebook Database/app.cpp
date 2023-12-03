@@ -7,8 +7,11 @@
 #include <cctype>
 #include <string>
 #include <limits>
+
+// Global variable to track unique IDs for contacts
 int globalID = 1;
 
+// Class definition for a contact in the phonebook
 class Phonebook
 {   
     private:
@@ -17,6 +20,7 @@ class Phonebook
         int ID{};
 
     public:
+        // Constructor to initialize a contact with a name and phone number
         Phonebook(std::string name, int phone)
         {
             Name = name;
@@ -24,7 +28,7 @@ class Phonebook
 
             ID = globalID++;
         }
-
+        // Getter methods for retrieving contact information
         std::string getName()
         {
             return Name;
@@ -38,6 +42,7 @@ class Phonebook
         {
             return ID;
         }
+        // Function to decrement the contact's ID
         void decrementID()
         {
             ID = getID() -1;
@@ -45,6 +50,7 @@ class Phonebook
 
 
 };
+// Function to display the main menu prompt
 void menuPromt()
 {
     std::cout << "---------------------------------------------------------------"<< std::endl;
@@ -57,7 +63,7 @@ void menuPromt()
     std::cout << std::setw(3)<< " | "  << "Search" << std::setw(8) << "| " << "Searches For a User" << std::endl;
     std::cout << std::setw(3)<< " | "  << "Close" << std::setw(9) << "| " << "Closes The Address Book" << std::endl;
 }
-
+// Function to print the list of contacts
 void listContacts(std::list<Phonebook> contacts)
 {
     if(contacts.size())
@@ -78,6 +84,7 @@ void listContacts(std::list<Phonebook> contacts)
     }
     std::cout << std::endl << std::endl;
 }
+// Function to search for a contact by name
 void searchContacts(std::list<Phonebook> &contacts,std::string inputName)
 {
     auto contactIterator = std::find_if(contacts.begin(),contacts.end(),[&inputName](Phonebook &contact)
@@ -103,7 +110,7 @@ void searchContacts(std::list<Phonebook> &contacts,std::string inputName)
         std::cout << "------------------------------------------" << std::endl;
     }
 }
-
+// Function to delete a contact by ID
 void deleteContact(std::list<Phonebook> &contacts,int inputID)
 {
    auto foundIterator = std::remove_if(contacts.begin(),contacts.end(),[&inputID](Phonebook &contact)
@@ -123,7 +130,7 @@ void deleteContact(std::list<Phonebook> &contacts,int inputID)
     }
 
 }
-
+// Function to convert a string to lowercase
 std::string toLowerCase(std::string str)
 {
     std::transform(str.begin(),str.end(),str.begin(),[](unsigned char c)
@@ -136,6 +143,8 @@ std::string toLowerCase(std::string str)
 int main() {
 
     std::list<Phonebook> contacts;
+    
+    // Lambda function to create a contact and add it to the lis
     auto createContact = [&contacts](std::string Name, int Number)
     {
         contacts.emplace_back(Name,Number);
