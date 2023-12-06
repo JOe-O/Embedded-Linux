@@ -8,48 +8,49 @@
 #include <string>
 #include <limits>
 
-// Global variable to track unique IDs for contacts
-int globalID = 1;
+
 
 // Class definition for a contact in the phonebook
 class Phonebook
 {   
     private:
+        
         std::string Name;
         int Phonenumber;
         int ID{};
 
     public:
+        // Global variable to track unique IDs for contacts
+        static int globalID;
         // Constructor to initialize a contact with a name and phone number
-        Phonebook(std::string name, int phone)
+        Phonebook(std::string name, int phone) : Name(name),Phonenumber(phone)
         {
-            Name = name;
-            Phonenumber = phone;
-
             ID = globalID++;
         }
         // Getter methods for retrieving contact information
-        std::string getName()
+        std::string getName() const
         {
             return Name;
         }
 
-        int getNumber()
+        int getNumber() const
         {
             return Phonenumber;
         }
-         int getID()
+         int getID() const
         {
             return ID;
         }
         // Function to decrement the contact's ID
-        void decrementID()
+        void decrementID() 
         {
             ID = getID() -1;
         }
 
 
 };
+int Phonebook::globalID = 1;
+
 // Function to display the main menu prompt
 void menuPromt()
 {
@@ -121,7 +122,7 @@ void deleteContact(std::list<Phonebook> &contacts,int inputID)
     if(foundIterator != contacts.end())
     {
         contacts.erase(foundIterator);
-        globalID--;
+        Phonebook::globalID--;
 
     }
     else
@@ -197,7 +198,7 @@ int main() {
         else if(promtAnswer == "delete all")
         {
             contacts.clear();
-            globalID = 1;
+            Phonebook::globalID = 1;
         }
         else if(promtAnswer == "search")
         {
