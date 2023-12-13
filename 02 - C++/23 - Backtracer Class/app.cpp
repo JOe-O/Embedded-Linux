@@ -1,6 +1,4 @@
-/*
- * Summing range of values in a vector
- */
+
 #include <iostream>
 #include <vector>
 #include <string>
