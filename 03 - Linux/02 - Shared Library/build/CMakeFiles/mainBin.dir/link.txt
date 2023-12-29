@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mainBin.dir/main.cpp.o -o mainBin  -Wl,-rpath,"/home/joe/Desktop/Embedded-Linux/03 - Linux/02 - Shared Library/build/lib" lib/libprintLib.so 

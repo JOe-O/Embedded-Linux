@@ -1,0 +1,6 @@
+/home/joe/Desktop/Embedded-Linux/04 - CMake/06 - Function & Caching/build/CMakeFiles/mainBin.dir
+/home/joe/Desktop/Embedded-Linux/04 - CMake/06 - Function & Caching/build/CMakeFiles/edit_cache.dir
+/home/joe/Desktop/Embedded-Linux/04 - CMake/06 - Function & Caching/build/CMakeFiles/rebuild_cache.dir
+/home/joe/Desktop/Embedded-Linux/04 - CMake/06 - Function & Caching/build/lib/CMakeFiles/wifiLib.dir
+/home/joe/Desktop/Embedded-Linux/04 - CMake/06 - Function & Caching/build/lib/CMakeFiles/edit_cache.dir
+/home/joe/Desktop/Embedded-Linux/04 - CMake/06 - Function & Caching/build/lib/CMakeFiles/rebuild_cache.dir

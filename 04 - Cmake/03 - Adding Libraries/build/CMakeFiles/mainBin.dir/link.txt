@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mainBin.dir/main.cpp.o CMakeFiles/mainBin.dir/src/calc.cpp.o -o mainBin  -Wl,-rpath,"/home/joe/Desktop/Embedded-Linux/04 - CMake/03 - Adding Libraries/build/lib" lib/libwifiLib.so 

@@ -1,0 +1,4 @@
+/home/joe/Desktop/Embedded-Linux/04 - CMake/07 - Compile & Install/build/Executables/mainBin
+/home/joe/Desktop/Embedded-Linux/04 - CMake/07 - Compile & Install/build/Includes/config.h.in
+/home/joe/Desktop/Embedded-Linux/04 - CMake/07 - Compile & Install/build/Includes/calc.hpp
+/home/joe/Desktop/Embedded-Linux/04 - CMake/07 - Compile & Install/build/Includes/wifi.hpp

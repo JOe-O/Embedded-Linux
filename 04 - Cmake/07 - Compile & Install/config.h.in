@@ -1,0 +1,7 @@
+#define ProductType "${PRODUCT_TYPE}"
+
+
+#define ProductYear "2023"
+
+#define addIncludes_VERSION_MAJOR @addIncludes_VERSION_MAJOR@
+#define addIncludes_VERSION_MINOR @addIncludes_VERSION_MINOR@

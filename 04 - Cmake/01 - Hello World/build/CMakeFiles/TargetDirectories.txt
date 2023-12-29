@@ -1,0 +1,3 @@
+/home/joe/Desktop/Embedded-Linux/04 - Cmake/01 - Hello World/build/CMakeFiles/hello.bin.dir
+/home/joe/Desktop/Embedded-Linux/04 - Cmake/01 - Hello World/build/CMakeFiles/edit_cache.dir
+/home/joe/Desktop/Embedded-Linux/04 - Cmake/01 - Hello World/build/CMakeFiles/rebuild_cache.dir
